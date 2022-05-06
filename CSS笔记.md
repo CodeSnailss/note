@@ -45,7 +45,15 @@
 > ### 背景色半透明：***background: rgba(val, val, val, 透明度); //透明度为0 ~ 1
 
 # 盒子模型
-> ## 1. border //盒子边框样式
-> ## 2. content //盒子内的内容
-> ## 3. padding //内边距，也就是content与盒子边框的距离
-> ## 4. margin //外边距，也就是盒子与盒子之间的距离
+> - **border //盒子边框样式**
+> - **content //盒子内的内容**
+> - **padding //内边距，也就是content与盒子边框的距离，如果盒子有width则会扩大宽度**
+> - **margin //外边距，也就是盒子与盒子之间的距离**
+> - **border-radius: 左上 右上 右下 左下 //圆角半径**
+> - **box-shadow: h-shadow v-shadow blur spread color (inset); //盒子阴影，如：box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, .3);**
+
+# 浮动
+> ## float
+> 设置了浮动的元素最重要的特性：
+> 1. **脱标：脱离了标准普通流的控制，移（浮）动到指定位置（动）**
+> 2. **浮动的盒子不再保留原先的位置**
