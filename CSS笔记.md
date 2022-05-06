@@ -75,5 +75,17 @@
 >     - ## 闭合浮动：
 >       - **额外标签法**也称为**隔墙法**
 >       - **父级添加overflow属性**
->       - **父级添加after伪元素**
 >       - **父级添加双伪元素**
+>       - **父级添加after伪元素，语法：**
+>         ```
+>         .clearfix:after {
+>           content: "";
+>           display: block;
+>           height: 0;
+>           clear: both;
+>           visibility: hidden;
+>         }
+>         .clearfix {   /* IE6、7专有 */
+>           *zoom: 1;
+>         }
+>         ```
